@@ -1,0 +1,56 @@
+#Index
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Navigation Links</title>
+</head>
+<body>
+    <ul>
+        <div class="box">
+            <li><a href="login1.html" target="rightFrame">Login</a></li><br>
+            <li><a href="registration.html" target="rightFrame">Registration</a></li><br>
+            <li><a href="contact_us.html" target="rightFrame">Contact Us</a></li><br>
+        </div>
+    </ul>
+</body>
+</html>
+
+
+
+To convert the provided HTML code into static web pages, you need to separate the CSS styles into a separate file, and ensure that each HTML file contains its own content without relying on external resources such as images. Here's the modified version:
+
+HTML file (index.html):
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Navigation Links</title>
+</head>
+<body>
+    <ul>
+        <div class="box">
+            <li><a href="login1.html" target="rightFrame">Login</a></li><br>
+            <li><a href="registration.html" target="rightFrame">Registration</a></li><br>
+            <li><a href="contact_us.html" target="rightFrame">Contact Us</a></li><br>
+        </div>
+    </ul>
+</body>
+</html>
+
+CSS file (styles.css):
+body {
+    background: url(book.jpg);
+}
+
+.box a {
+    color: rgb(255, 255, 255);
+}
+
+.box p {
+    color: red;
+}
