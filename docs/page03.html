@@ -1,0 +1,99 @@
+# Registration
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="reg">
+        <h2>Registration</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="text" id="mobile" name="mobile" required><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <br><input type="submit" value="Submit"><br>
+        </form>
+        <a href="login.html">Already have an account?</a>
+   </div>
+</body>
+
+</html>
+
+#styles
+
+.reg {
+    width: 300px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.reg h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reg label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.reg input[type="text"],
+.reg input[type="password"],
+.reg input[type="email"],
+.reg textarea,
+.reg select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.reg input[type="submit"] {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.reg input[type="submit"]:hover {
+    background: #0099ff;
+    transition: .5s;
+}
